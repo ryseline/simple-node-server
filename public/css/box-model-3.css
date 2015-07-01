@@ -1,0 +1,26 @@
+
+body {
+    background-color: #CEF3FF;
+    width: 900px;
+    margin: 40px;
+    }
+    
+.header {
+    margin: 40px;
+    height: 200px;
+    width: 900px;
+    }
+
+.box {
+    margin: 40px;
+    width: 200px;
+    background-color: #FFFFFF;
+    }
+    
+.preview {
+    position: absolute;
+    right: 40px;
+    background-color: #6699FF;
+    width: 700px;
+}
+
