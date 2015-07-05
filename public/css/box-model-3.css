@@ -1,26 +1,133 @@
 
 body {
-    background-color: #CEF3FF;
+    background-color: #FFFFFF;
+    font-family: Arial;
+     }
+
+
+.rect {
+width: 40px;
+height: 100px;
+margin: 5px;
+position:fixed;
+top:200px;
+right:-5px;
+border-style: dashed;
+border-color: #cbe5ff;
+color: #cbe5ff;
+padding: 10px;
+text-align: center;
+}
+
+a:link {
+    color: #cbe5ff;
+}
+
+
+.whole {
+    background-color: #cbe5ff;
     width: 900px;
-    margin: 40px;
+    padding:40px;
+    margin: auto;
     }
     
 .header {
-    margin: 40px;
+    margin: auto;
     height: 200px;
-    width: 900px;
     }
 
-.box {
-    margin: 40px;
-    width: 200px;
-    background-color: #FFFFFF;
-    }
     
 .preview {
+    background-color: #84befe;
+    width: 750px;
+    height: 300px;
+    Float: right;
+    
+    
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    float: left;
     position: absolute;
-    right: 40px;
-    background-color: #6699FF;
-    width: 700px;
+    }
+
+
+.container {
+    margin: auto;
+    width: 900px;
+    
+}
+
+
+.nav a {
+position: relative;
+margin: auto;
+float: left;
+text-decoration:none;
+color:white;
+background-color:#84befe;
+padding: 10px;
+height: 10px;
+width: 159px;
+border-right:1px solid white;
+text-align:center;
+}
+
+
+
+.mid {
+    width: 900px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin: auto;
+
+}
+
+
+.last {
+    margin-top: 10px;
+    width: 900px;
+    background-color: #FFFFFF;
+    height: 320px;
+    
+}
+
+.left {
+    margin: 5px;
+    border-style: dotted;
+    height: 300px;
+    border-color: #cbe5ff;
+    width: 430px;
+    float: left;
+   
+}
+
+.left-head {
+    margin: auto;
+    margin-top: 5px;
+    width: 420px;
+    height: 50px;
+    background-color: #84befe;
+}
+
+.right {
+    margin: 5px;
+    border-style: dotted;
+    height: 300px;
+    border-color: #cbe5ff;
+    width: 430px;
+    float: right;
+   
+}
+
+.right-head {
+    margin: auto;
+    margin-top: 5px;
+    width: 420px;
+    height: 50px;
+    background-color: #84befe;
 }
 
