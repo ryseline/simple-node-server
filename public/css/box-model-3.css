@@ -77,8 +77,9 @@ text-align:center;
 
 }
 
-.nav a:link-hover {
-    color:white;
+.nav a:hover {
+    background-color:white;
+    color:#84befe;
 }
 
 .mid {
