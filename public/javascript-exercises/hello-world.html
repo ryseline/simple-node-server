@@ -1,0 +1,56 @@
+<html>
+<body>
+
+<h1>My first Javscript</h1>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<a href="#"
+onclick="clickme()">
+Click Me!</a>
+
+<script>
+function clickme() {
+  document.getElementById('demo').innerHTML = 'Hello World'
+}
+</script>
+
+<script>
+     function outputDetails(name, age){
+        document.write (name + " is " + age + " years old.");
+     }
+</script>
+
+<p>Example with Parameters</p>
+<p>Click the button to call the function</p>
+<form>
+    <input type="button" onclick="outputDetails('Senyora', 18)" value="View Senyora Details">
+</form>
+
+
+
+<script>
+    //Concatenates the first and last name
+    function concatenate(first, last) {
+        var full;
+        full = first + " " + last;
+        return full;
+    }
+
+    //Writes in the page the first and last name values
+    function outputName(first, last) {
+        document.write ("First name: " + first + ".<br>");
+        document.write ("Last name: " + last + ".<br>");
+        var result = concatenate(first, last)
+        document.write ("Put it together: " + result + "!");
+    }
+</script>
+
+<p>Example with Return Value</p>
+<p>Click the button to call the function</p>
+<form>
+    <input type="button" onclick="outputName('Anna', 'Manalastas')" value="Concatenate!">
+</form>
+
+</body>
+</html>
