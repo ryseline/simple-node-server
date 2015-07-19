@@ -3,15 +3,23 @@
     <head>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../history-of-the-internet/materialize/css/materialize.css"/>
-
+      <title>MESH | Early Protocols</title>
+      
+   
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+       
+   
     </head>
 
     <body>
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="../history-of-the-internet/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../history-of-the-internet/materialize/js/materialize.js"></script>
+     
+     
       
 <nav class="green lighten-1">
   <div class="container">
@@ -33,14 +41,51 @@
   
  <div class="col s10 offset-s1 grid-example"><span class="flow-text">
         	<h1>Early Protocols</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				
+				
+				
+				
+				
+				
+				
+				<p>The Internet Protocol suite is the set of communication models used on the Internet. The most famous is the Transmission Control Protocol and the Internet Protocol. It was also the first protocol to be made, which was established during the 1970's by Robert Kahn of the DARPA Information Processing Technology Office.</p>
+				<p>The TCP/IP is the basis for sending and transferring data over the internet. It has five layers:</p>
+			
+	<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">Data Transport Layer</div>
+      <div class="collapsible-body"><p>This moves data over cables based on the physical address of each Network Interface Card.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Data Link Layer</div>
+      <div class="collapsible-body"><p>This layer frames the packets of data that are sent through the network.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Internet Protocol Layer</div>
+      <div class="collapsible-body"><p>This layer puts an Internet Protocol wrapper around the data with source and destination addresses in it's header</p></div>
+    </li>
+      <li>
+      <div class="collapsible-header">Transport Layer</div>
+      <div class="collapsible-body"><p>This layer governs the setting of suitable packet sizes, flow control and detection of error/</p></div>
+    </li>
+      <li>
+      <div class="collapsible-header">Application Layer</div>
+      <div class="collapsible-body"><p>This layer provides for standard interfaces for such functions as file transfer and remote login.</p></div>
+    </li>
+  </ul>
+			<h6>Sources<br>
+			<a href="http://www.nethistory.info/History%20of%20the%20Internet/protocols.html">Net History</a><br>
+			<a href="http://ben.web.cern.ch/ben/TCPHIST.html">CERN</a><br>
+			<a href="http://www.walthowe.com/navnet/history.html"></a></h6>
       </span>
+      <button onclick="getElementById('demo').innerHTML=Date()" class="waves-effect waves-light btn green lighten-2">The time now is:</button>
+
+<p id="demo"></p>
+      
       </div>
-      
-      
+       
+  
             </div>
     
     
@@ -51,12 +96,22 @@
      <footer class="page-footer green lighten-1">
           <div class="footer-copyright">
             <div class="container">
-            &#169; 2015 Copyright RCCD
+            MESH &#169; 2015 Copyright Aravis
             
             </div>
           </div>
         </footer>
-            
+    
+
+<script>$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+      </script>
+
+  
+        
     </body>
   </html>
-        
+      
