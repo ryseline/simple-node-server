@@ -50,34 +50,56 @@
 				
 				
 				<p>The Internet Protocol suite is the set of communication models used on the Internet. The most famous is the Transmission Control Protocol and the Internet Protocol. It was also the first protocol to be made, which was established during the 1970's by Robert Kahn of the DARPA Information Processing Technology Office.</p>
-				<p>The TCP/IP is the basis for sending and transferring data over the internet. It has five layers:</p>
+				
+				<p>There were four rules that Kahn made</p>
 			
 	<ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header">Data Transport Layer</div>
-      <div class="collapsible-body"><p>This moves data over cables based on the physical address of each Network Interface Card.</p></div>
+      <div class="collapsible-header">1</div>
+      <div class="collapsible-body"><p>"Each distinct network would have to stand on its own and no internal changes could be required to any such network to connect it to the Internet."</p></div>
     </li>
     <li>
-      <div class="collapsible-header">Data Link Layer</div>
-      <div class="collapsible-body"><p>This layer frames the packets of data that are sent through the network.</p></div>
+      <div class="collapsible-header">2</div>
+      <div class="collapsible-body"><p>"Communications would be on a best effort basis. If a packet didn't make it to the final destination, it would shortly be retransmitted from the source."</p></div>
     </li>
     <li>
-      <div class="collapsible-header">Internet Protocol Layer</div>
-      <div class="collapsible-body"><p>This layer puts an Internet Protocol wrapper around the data with source and destination addresses in it's header</p></div>
+      <div class="collapsible-header">3</div>
+      <div class="collapsible-body"><p>"Black boxes would be used to connect the networks; these would later be called gateways and routers. There would be no information retained by the gateways about the individual flows of packets passing through them, thereby keeping them simple and avoiding complicated adaptation and recovery from various failure modes."</p></div>
     </li>
       <li>
-      <div class="collapsible-header">Transport Layer</div>
-      <div class="collapsible-body"><p>This layer governs the setting of suitable packet sizes, flow control and detection of error/</p></div>
+      <div class="collapsible-header">4</div>
+      <div class="collapsible-body"><p>"There would be no global control at the operations level."</p></div>
     </li>
-      <li>
-      <div class="collapsible-header">Application Layer</div>
-      <div class="collapsible-body"><p>This layer provides for standard interfaces for such functions as file transfer and remote login.</p></div>
-    </li>
+      
   </ul>
+  
+  <p>In 1973, with Vint Cerf, Robert Kahn decided to work out a more detailed protocol. This was the result of their collaboration:</p>
+  
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">1</div>
+      <div class="collapsible-body"><p>"Communication between two processes would logically consist of a very long stream of bytes (they called them octets). The position of any octet in the stream would be used to identify it."</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">2</div>
+      <div class="collapsible-body"><p>"Flow control would be done by using sliding windows and acknowledgments (acks). The destination could select when to acknowledge and each ack returned would be cumulative for all packets received to that point."</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">3</div>
+      <div class="collapsible-body"><p>"It was left open as to exactly how the source and destination would agree on the parameters of the windowing to be used. Defaults were used initially."</p></div>
+    </li>
+      <li>
+      <div class="collapsible-header">4</div>
+      <div class="collapsible-body"><p>"Although Ethernet was under development at Xerox PARC at that time, the proliferation of LANs were not envisioned at the time, much less PCs and workstations. The original model was national level networks like ARPANET of which only a relatively small number were expected to exist. Thus a 32 bit IP address was used of which the first 8 bits signified the network and the remaining 24 bits designated the host on that network. This assumption, that 256 networks would be sufficient for the foreseeable future, was clearly in need of reconsideration when LANs began to appear in the late 1970s."</p></div>
+    </li>
+      
+  </ul>
+  
 			<h6>Sources<br>
 			<a href="http://www.nethistory.info/History%20of%20the%20Internet/protocols.html">Net History</a><br>
 			<a href="http://ben.web.cern.ch/ben/TCPHIST.html">CERN</a><br>
-			<a href="http://www.walthowe.com/navnet/history.html"></a></h6>
+			<a href="http://www.walthowe.com/navnet/history.html">Navnet</a><br>
+			<a href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet">Internet Society</a></h6>
       </span>
       <button onclick="getElementById('demo').innerHTML=Date()" class="waves-effect waves-light btn green lighten-2">The time now is:</button>
 
