@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../modern-internet/materialize/css/materialize.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>MESH | Email</title>
+    
+    </head>
+
+    <body>
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="../modern-internet/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../modern-internet/materialize/js/materialize.js"></script>
+    
+      
+      
+<nav class="yellow darken-4">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="http://simple-node-server.ryseline.c9.io/modern-internet/index.html" class="brand-logo right">MESH</a>
+       
+
+    </div>
+    </div>
+    </nav>
+     <ul id="slide-out" class="side-nav fixed">
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/index.html">Home</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/network-protocols.html">Network Protocols</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/email.html">Electronic Mail</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/search-engines.html">Search Engine</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/blogging.html">Blogging</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/video-streaming.html">Video Streaming</a></li>
+    <li><a href="http://simple-node-server.ryseline.c9.io/modern-internet/microblog-social-networking.html">Microblogs</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        
+
+ 
+        <script>
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+  // Show sideNav
+$('.button-collapse').sideNav('show');
+// Hide sideNav
+$('.button-collapse').sideNav('hide');
+      </script>
+      
+    
+
+<div class="row">
+
+  
+ <div class="col s8 offset-s3 grid-example"><span class="flow-text">
+      <h3 id="mail"></h3>  
+    <script> 
+    var str ="Electronic Mail"
+    document.getElementById("mail").innerHTML = str
+    </script>  
+     
+    <p id="data"></p>  
+    <script> 
+    var str ="Everyone probably uses electronic mail. This is the fastest way to send files and requests over the internet. With our unique e-mail addresses, we can receive and send things in just an instant. But how did the e-mail became what it is now?"
+    document.getElementById("data").innerHTML = str
+    </script> 
+    
+    <p id="data1"></p>  
+    <script> 
+    var str ="In 1971, computer engineer Ray Tomlinson decided to use the @ symbol to designate the address the mail has to go to. He was also the first person to send an email over the internet."
+    document.getElementById("data1").innerHTML = str
+    </script> 
+ 
+     
+     <p id="data2"></p>  
+    <script> 
+    var str ="  Much like snail mail that stops in different postal stations, e-mail is also passed from one computer to another through a mail server. Mail is stored in an electronic mailbox once it reaches its destination."
+    document.getElementById("data2").innerHTML = str
+    </script>
+     
+     
+     <p id="how"></p>  
+    <script> 
+    var str ="Here's how e-mail works"
+    document.getElementById("how").innerHTML = str
+    </script>
+    
+      <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">1</div>
+      <div class="collapsible-body"><p>"The sender composes a message using the email client on their computer."</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">2</div>
+      <div class="collapsible-body"><p>"When the user sends the message, the email text and attachments are uploaded to the SMTP (Simple Mail Transfer Protocol) server as outgoing mail."</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header">3</div>
+      <div class="collapsible-body"><p>"All outgoing messages wait in the outgoing mail queue while the SMTP server communicates with the DNS (Domain Name Server–like a phone book for domain names and server IP addresses) to find out where the recipient’s email server is located. If the SMTP server finds the recipient’s email server,  it will transfer the message and attachments. If the recipient’s server can’t be found, the sender will get a “Mail Failure” notification in their inbox."</p></div>
+    </li>
+      <li>
+      <div class="collapsible-header">4</div>
+      <div class="collapsible-body"><p>"The next time the recipient clicks “Send & Receive,” their email client will download all new messages from their own email server."</p></div>
+    </li>
+     
+  </ul>
+    <script>$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+      </script>
+      
+      <h6>Source: <br>
+      <a href="http://www.learnthenet.com/learn-about/how-email-works/">Learn the Net</a><br>
+      <a href="http://computer.howstuffworks.com/e-mail-messaging/email.htm">How Stuff Works</a></h6>
+     
+      </span>
+     
+    
+      
+            </div>
+    
+    
+    
+    </div>
+      
+      
+      <footer class="page-footer yellow darken-4">
+          <div class="footer-copyright">
+            <div class="container right">
+            MESH &#169; 2015 Copyright Aravis
+            </div>
+          </div>
+        </footer>
+            
+    </body>
+  </html>
+        
